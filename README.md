@@ -1,4 +1,4 @@
-# Cover-song-identification-with-Convolutional-Neural-Networks 
+# Music adaptations recognition using deep learning
 The goal of this project is to prove that we can use pre-trained convolutional neural networks to identify song covers.
 
 For this project we picked 3 songs and downloaded 25 covers for each song in order to prepare the dataset. 
