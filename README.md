@@ -1,15 +1,10 @@
 # Music adaptations recognition using deep learning
-The goal of this project is to prove that we can use pre-trained convolutional neural networks to identify song covers.
 
-For this project we picked 3 songs and downloaded 25 covers for each song in order to prepare the dataset. 
 
-Dataset Preparation: 
-The preparation of the dataset happens in two steps. The first step is to cut the mp3 of the songs into shorter pieces. We tried many different durations ranging from 10s to 30s. To do this we made a small python program with the help of the librosa library
+ABSTRACT
 
-Then with the help of another small python program we convert the mp3s to spectograms,save them as images and split the into training data and test data
+The purpose of this work is the identification of musical adaptations with the use of deep learning and more specifically with the use of pre-trained convolutional neural networks.
 
-CNN models:
-The models we used for this project are Densenet,VGG16 and InceptionV3. We experimented a bit with adding and freezing some layers.
+Initially, the dataset was created using the python language and its various libraries (numpy,pandas,matplotlib). The first step was to break the songs into shorter pieces to increase the amount of data that would be used by the models. There was a lot of experimentation during this process and various durations ranging from 10 to 30 seconds were tested. The audio signals of these tracks were then converted into spectrograms and stored in jpg image format. Finally, to complete the dataset, these images were randomly divided into 2 folders which constitute the training set and the validation set. All of the above are made with python
 
-Results:
-The ending results are promising but show that the dataset was too small for this project and that caused overfitting. The training accuracy of the models was very high (over 90%) but the validation accuracy never passed 65%. With more covers used the results could be better
+The transfer learning technique was used for the training of the networks, according to which, the pre-trained models are used with some configurations in order to achieve faster results. The models tested in this process were VGG16, DenseNet and Inceptionv3 because they have already been used for similar classification problems with proven results. Finally, through some unsuccessful examples of transfer learning (because of the small amount of data) we come up with ways in which we could improve this process for better results.
